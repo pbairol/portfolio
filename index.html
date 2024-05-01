@@ -120,14 +120,157 @@
       /* Set the text color to teal */
       font-weight: bold;
       /* Make the text bold */
+    }
 
-      /* Light Mode */
-      .light-mode {
-        background-color: #f0f0f0;
-        color: #000000;
-      }
+    /* Light Mode */
+    .light-mode {
+      background-color: #f0f0f0;
+      color: #000000;
+    }
 
-      /* Dark Mode */
-      .dark-mode {
-        background-color: #333333;
-        color: #ffffff;
+    /* Dark Mode */
+    .dark-mode {
+      background-color: #333333;
+      color: #ffffff;
+    }
+
+    /* Toggle Button Style */
+    #mode-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      z-index: 9999;
+    }
+
+    /* About Me Section */
+    #about {
+      padding: 40px 20px;
+      background-color: #000000;
+      /* Use the same background color as the intro section */
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Scrollspy Active Item */
+    .active {
+      font-weight: bold;
+    }
+
+    /* About Me Heading */
+    #about h2 {
+      color: #f9f9f9;
+      /* Set the heading color to red */
+      text-align: center;
+      /* Center the heading */
+      margin-bottom: 20px;
+      /* Add some bottom margin */
+    }
+
+    /* About Me Text */
+    #about p {
+      color:
+        #ffffff;
+      /* Set the text color to a dark shade */
+      font-size: 18px;
+      /* Increase the font size */
+      line-height: 1.6;
+      /* Increase the line height for better readability */
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <!-- Main Content-->
+  <main>
+    <!-- First Section: Heading lines and image -->
+    <section id="intro" class="section scrollspy full-height">
+      <div class="overlay"></div>
+      <div class="container">
+        <img class="picture" src="profile.png" alt="Pratik">
+        <div class="col-md-9">
+          <h2>Hi, I'm <span class="teal">Pratik Bairoliya.</span></h2>
+          <h5 style="color:#fff"> I'm a <span class="typing" style="font-weight: 300; color:#ff0000"></span></h5>
+          <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving complex and
+            challenging real-world problems.</h5>
+        </div>
+        <div class="social">
+          <a href="http://linkedin.com/in/pbairol" target="_blank" class="icon-btn linkedin">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://github.com/pbairol/" target="_blank" class="icon-btn github">
+            <i class="fab fa-github"></i>
+          </a>
+          <div class='buttons'>
+            <div class='buttons'>
+              <a href="#about" class="readme">About Me</a>
+              <button type="button" class="readme" data-download="">Resume</button>
+              <a href="mailto:pbairol@ncsu.edu" class="readme">Email me</a>
+              <a href="#projects" class="readme">My Projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section scrollspy full-height">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>Hey there! I'm Pratik Bairoliya, a passionate and self-driven software engineer and applied mathematcian
+          currently studying at <a href="https://ncsu.edu/" target="_blank">NC State
+            University</a> as a Park Scholar. The <a href="https://park.ncsu.edu/" target="_blank">Park
+            scholarship</a> program has provided me with incredible opportunities
+          for leadership development, service, and civic engagement, shaping me into the person I am today.</p>
+
+        <p>At NC State, I'm not just focused on academics; I also co-founded and mentor at <a
+            href="https://inspirenc.us/">InspireNC</a>, a non-profit STEAM
+          organization. Through our robotics team and various outreach initiatives, we aim to inspire young minds and
+          promote STEM education in our community.</p>
+
+        <p>Professionally, I've had the privilege to intern at Fidelity Investments and currently at Capital One, where
+          I've been involved in developing innovative solutions using a variety of technologies including Python, Java,
+          AWS, and more.</p>
+
+        <p>In my free time, you can find me tinkering with new technologies, participating in hackathons, or simply
+          enjoying a good book. I'm always excited to connect with like-minded individuals, so feel free to reach out to
+          me on <a href="http://linkedin.com/in/pbairol" target="_blank">LinkedIn</a>!</p>
+
+      </div>
+    </section>
+
+  </main>
+
+
+
+  <!-- Typed.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <script type="text/javascript">
+    var typed = new Typed('.typing', {
+      strings: ["Park Scholar", "Curious Learner", "Engineer", "Programmer"],
+      loop: true,
+      typeSpeed: 80,
+      backSpeed: 20
+    });
+  </script>
+
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    // Materialize - Initializers
+    $(document).ready(function () {
+      $('.scrollspy').scrollSpy();
+    });
+  </script>
+</body>
+
+</html>
