@@ -13,175 +13,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      background-color: #000000;
-      /* Set a background color */
-    }
-
-    .container {
-      max-width: 8000px;
-      max-height: 1000px;
-      /* Adjust based on your preference */
-      margin: 0 auto;
-      /* Center the content horizontally */
-      padding: 200px;
-      border: 2px solid #ff0000;
-      /* Add a border around the site */
-      border-radius: 10px;
-      /* Add rounded corners */
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      /* Add a subtle shadow effect */
-    }
-
-    .picture {
-      display: block;
-      /* Make the image a block element */
-      margin: 60px;
-      /* Center the image horizontally and add some bottom margin */
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      /* Make the image circular */
-    }
-
-    .col-md-9 {
-      text-align: center;
-      /* Center the text */
-      color: #ff0000;
-      /* Set your name color to red */
-    }
-
-    .social {
-      text-align: center;
-      /* Center the social icons and buttons */
-    }
-
-    .social .buttons {
-      margin-top: 20px;
-    }
-
-    .icon-btn {
-      margin-right: 10px;
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      /* Add a semi-transparent overlay */
-      z-index: -1;
-      /* Ensure the overlay is behind the content */
-    }
-
-    /* Styling social icons */
-    .icon-btn {
-      color: #ff0000;
-      /* Set icon color to red */
-    }
-
-    .icon-btn:hover {
-      color: #ffffff;
-      /* Change icon color to white on hover */
-      background-color: #ff0000;
-      /* Change background color to red on hover */
-      border-radius: 50%;
-      /* Add rounded border on hover */
-    }
-
-    .buttons .readme {
-      color: #ffffff;
-      /* Set text color to white */
-      background-color: #ff0000;
-      /* Set background color to red */
-      padding: 10px 20px;
-      /* Add padding */
-      border-radius: 5px;
-      /* Add rounded corners */
-      text-decoration: none;
-      /* Remove underline */
-    }
-
-    .buttons .readme:hover {
-      background-color: #cc0000;
-      /* Darken background color on hover */
-    }
-
-    .buttons .readme+.readme {
-      margin-left: 10px;
-      /* Add spacing between buttons */
-    }
-
-    .teal {
-      color: #ffffff;
-      /* Set the text color to teal */
-      font-weight: bold;
-      /* Make the text bold */
-    }
-
-    /* Light Mode */
-    .light-mode {
-      background-color: #f0f0f0;
-      color: #000000;
-    }
-
-    /* Dark Mode */
-    .dark-mode {
-      background-color: #333333;
-      color: #ffffff;
-    }
-
-    /* Toggle Button Style */
-    #mode-toggle {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-      outline: none;
-      z-index: 9999;
-    }
-
-    /* About Me Section */
-    #about {
-      padding: 40px 20px;
-      background-color: #000000;
-      /* Use the same background color as the intro section */
-      margin-top: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Scrollspy Active Item */
-    .active {
-      font-weight: bold;
-    }
-
-    /* About Me Heading */
-    #about h2 {
-      color: #f9f9f9;
-      /* Set the heading color to red */
-      text-align: center;
-      /* Center the heading */
-      margin-bottom: 20px;
-      /* Add some bottom margin */
-    }
-
-    /* About Me Text */
-    #about p {
-      color:
-        #ffffff;
-      /* Set the text color to a dark shade */
-      font-size: 18px;
-      /* Increase the font size */
-      line-height: 1.6;
-      /* Increase the line height for better readability */
-    }
-  </style>
 
 
 </head>
@@ -195,8 +26,8 @@
       <div class="container">
         <img class="picture" src="profile.png" alt="Pratik">
         <div class="col-md-9">
-          <h2>Hi, I'm <span class="teal">Pratik Bairoliya.</span></h2>
-          <h5 style="color:#fff"> I'm a <span class="typing" style="font-weight: 300; color:#ff0000"></span></h5>
+          <h2>Hi, I'm <span class="teal"> Pratik Bairoliya. </span></h2>
+          <h5 style="color:#72bcd4"> I'm a <span class="typing" style="font-weight: 300; color:#1e5364"></span></h5>
           <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving complex and
             challenging real-world problems.</h5>
         </div>
@@ -210,7 +41,7 @@
           <div class='buttons'>
             <div class='buttons'>
               <a href="#about" class="readme">About Me</a>
-              <button type="button" class="readme" data-download="">Resume</button>
+              <a href="portfolioResume.pdf" class="readme">Resume</a>
               <a href="mailto:pbairol@ncsu.edu" class="readme">Email me</a>
               <a href="#projects" class="readme">My Projects</a>
             </div>
@@ -234,7 +65,8 @@
           organization. Through our robotics team and various outreach initiatives, we aim to inspire young minds and
           promote STEM education in our community.</p>
 
-        <p>Professionally, I've had the privilege to intern at Fidelity Investments and currently at Capital One, where
+        <p>Professionally, I've had the privilege to intern at Fidelity Investments. I am currently at Capital One,
+          where
           I've been involved in developing innovative solutions using a variety of technologies including Python, Java,
           AWS, and more.</p>
 
@@ -253,7 +85,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
   <script type="text/javascript">
     var typed = new Typed('.typing', {
-      strings: ["Park Scholar", "Curious Learner", "Engineer", "Programmer"],
+      strings: ["Park Scholar", "Curious Learner", "Software Engineer", "Programmer"],
       loop: true,
       typeSpeed: 80,
       backSpeed: 20
